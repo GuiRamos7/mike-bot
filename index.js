@@ -77,4 +77,4 @@ client.on('messageCreate', async (message) => {
     }
   }
 });
-client.login(process.env.NODE_ENV);
+client.login(process.env.TOKEN);
