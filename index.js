@@ -1,4 +1,4 @@
-const { prefix, token } = require('./config.json');
+require('dotenv').config();
 const { GuildMember, ApplicationCommandOptionType } = require('discord.js');
 const ytdl = require('ytdl-core');
 const { DisTube } = require('distube');
@@ -77,5 +77,4 @@ client.on('messageCreate', async (message) => {
     }
   }
 });
-
-client.login(token);
+client.login(process.env.NODE_ENV);
