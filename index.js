@@ -4,7 +4,7 @@ const ytdl = require('ytdl-core');
 const { DisTube } = require('distube');
 
 const { Player } = require('discord-player');
-const Client = require('./client/Client');
+const Client = require('./Client/Client');
 const play = require('play-dl'); // Everything
 
 const {
