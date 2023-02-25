@@ -77,5 +77,5 @@ client.on('messageCreate', async (message) => {
     }
   }
 });
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN ?? process.env.NODE_ENV ?? '');
 console.log('oi');
